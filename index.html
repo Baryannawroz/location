@@ -156,9 +156,10 @@
       function shows(number) {
         number = number - 0;
         cartshow.style.display = "block";
-        cartshow1.style.display = "block";
         par1.innerHTML = locationn[number][0];
-        srca.src.value = locationn[number][1];
+        srca.src = locationn[number][1];
+        console.log(srca.src);
+        cartshow1.style.display = "block";
       }
     </script>
   </body>
