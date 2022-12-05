@@ -32,9 +32,15 @@
         class="dropdown-menu w-75 justify-content-center"
         aria-labelledby="dropdownMenuButton"
       >
-        <div class="dropdown-item text-center" href="#">هەولێر</div>
-        <div class="dropdown-item text-center" href="#">کۆیە</div>
-        <div class="dropdown-item text-center" href="#">شەقڵاوە</div>
+        <div onclick="{shows(0)}" class="dropdown-item text-center" href="#">
+          هەولێر
+        </div>
+        <div onclick="{shows(1)}" class="dropdown-item text-center" href="#">
+          کۆیە
+        </div>
+        <div onclick="{shows(2)}" class="dropdown-item text-center" href="#">
+          شەقڵاوە
+        </div>
       </div>
     </div>
     <div class="dropdown contten d-flex justify-content-center mt-4">
@@ -89,6 +95,7 @@
         style="height: 100px; width: 100px"
       >
         <iframe
+          id="ss"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3221.288812021583!2d44.040535999999996!3d36.15952599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670265979715!5m2!1sen!2siq"
           frameborder="0"
           style="border: 0"
@@ -100,8 +107,8 @@
       <div><br /><br /></div>
       <div class="locations"></div>
       <div class="card-body" id="show11">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
+        <h5 id="t1" class="card-title">Card title</h5>
+        <p id="p1" class="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
@@ -138,10 +145,21 @@
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
       ];
+      let tit = document.getElementById("t1");
+      let par1 = document.getElementById("p1");
+      let srca = document.getElementById("ss");
+
       let cartshow = document.getElementById("show11");
       let cartshow1 = document.getElementById("map-container-google-1");
       cartshow.style.display = "none";
       cartshow1.style.display = "none";
+      function shows(number) {
+        number = number - 0;
+        cartshow.style.display = "block";
+        cartshow1.style.display = "block";
+        par1.innerHTML = locationn[number][0];
+        srca.src.value = locationn[number][1];
+      }
     </script>
   </body>
 </html>
