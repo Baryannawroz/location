@@ -79,7 +79,7 @@
     </div>
 
     <div
-      class="card d-flex justify-content-center"
+      class="card d-flex justify-content-center locations"
       style="width: 19rem; margin: 10% auto"
     >
       <!--Google map-->
@@ -89,7 +89,7 @@
         style="height: 100px; width: 100px"
       >
         <iframe
-          src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3221.288812021583!2d44.040535999999996!3d36.15952599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670265979715!5m2!1sen!2siq"
           frameborder="0"
           style="border: 0"
           allowfullscreen
@@ -98,7 +98,8 @@
 
       <!--Google Maps-->
       <div><br /><br /></div>
-      <div class="card-body">
+      <div class="locations"></div>
+      <div class="card-body" id="show11">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">
           Some quick example text to build on the card title and make up the
@@ -122,6 +123,25 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script>
+      let locationn = [
+        [
+          "هەولێر:سکرتاریەت",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103859.6437325217!2d45.30744226796707!3d35.56323744461137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267170455!5m2!1sen!2siq",
+        ],
+        [
+          "کۆیە:هۆڵی دۆستان",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25795.85115266418!2d44.60835375712591!3d36.08175152090274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267330247!5m2!1sen!2siq",
+        ],
+        [
+          "شەقڵاوا",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],
+      ];
+      let cartshow = document.getElementById("show11");
+      let cartshow1 = document.getElementById("map-container-google-1");
+      cartshow.style.display = "none";
+      cartshow1.style.display = "none";
+    </script>
   </body>
 </html>
