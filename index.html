@@ -102,10 +102,28 @@
         class="dropdown-menu w-75 justify-content-center"
         aria-labelledby="dropdownMenuButton"
       >
-        <div class="dropdown-item text-center" href="#">سلێمانی</div>
-        <div class="dropdown-item text-center" href="#">هەلەبجە</div>
-        <div class="dropdown-item text-center" href="#">سەیدسایەق</div>
+         <div onclick="{shows(6)}" class="dropdown-item text-center" href="#">
+          سلێمانی
+        </div>  <div onclick="{shows(7)}" class="dropdown-item text-center" href="#">
+          هەڵەبجە
+        </div>  <div onclick="{shows(8)}" class="dropdown-item text-center" href="#">
+          سەیدسادق
+        </div>  <div onclick="{shows(9)}" class="dropdown-item text-center" href="#">
+          عەربەت
+        </div>  <div onclick="{shows(10)}" class="dropdown-item text-center" href="#">
+          شارەزوور
+        </div>  <div onclick="{shows(11)}" class="dropdown-item text-center" href="#">
+          خورماڵ
+        </div>  <div onclick="{shows(12)}" class="dropdown-item text-center" href="#">
+          دەربەندیخان
+        </div>      <div onclick="{shows(13)}" class="dropdown-item text-center" href="#">
+          پێنجوێن
+        </div>      <div onclick="{shows(14)}" class="dropdown-item text-center" href="#">
+          پشدەر
+        </div>
       </div>
+      </div>
+    </div>
     </div>
     <div class="dropdown contten d-flex justify-content-center mt-4">
       <button
@@ -175,34 +193,70 @@
     <script>
       let locationn = [
         [
-          "هەولێر",
+          ": هەولێر",
           "یاریگای یانەی ئاسۆ،جووت سایدی بنەسڵاوە،تەنیشت مزگەوتی ئیسراو میعراج",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6439.405260171506!2d44.02711979655856!3d36.19811329638554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670269953052!5m2!1sen!2siq",
         ],
         [
-          "کۆیە",
+          ": کۆیە",
           "هۆڵی دۆستان خوار ئاشتی مام خدر",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25795.85115266418!2d44.60835375712591!3d36.08175152090274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267330247!5m2!1sen!2siq",
         ],
         [
-          "سۆران",
+          ": سۆران",
           " بۆ خوشکان :هۆڵی مەڵبەندی ١٢ی یەگرتووی سۆران",
           "بۆ برایان :مزگەوتی فورقان تەنیشت بارەگای کۆمەڵی دادگەری بەرامبەر بەڕێوبەرایەتی ئەوقافی سۆران",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
         [
-          "شەقڵاوا",
+          ": شەقڵاوا",
           "بارەگای رێخراوی نور لەسەر مەیدان",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
         [
-          "خەلیفان",
+          ": خەلیفان",
           "بارەگای کۆمەڵی دادگەر نزیک پیشەسازی خەلیفان",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
         [
-          "رواندز",
+          ": رواندز",
           "بارەگای ناوچەی رواندزی یەگرتووی ئیسلامی کوردستان نزیک تەکسی پاشای گەورە",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],  [
+          ": سلێمانی",
+          "یاریگای یانەی ئاشتی بەرامبەر کارەبای ڕزگاری",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],  [
+          ": هەڵەبجە",
+          "پارکی یاری هەڵەبجە",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],  [
+          ": سەیدسادق",
+          "یاریگای گشتی حەسار",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],  [
+          ": عەربەت",
+          "یاریگای لاوان پشت کتێبخانەی گشتی",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],  [
+          ": شارەزوور",
+          "یاریگای(خالی کاکەم)،تەنیشت بەڕێوەبەرێتی پەروەردەی شارەزوور",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ], [
+          ": خورماڵ",
+          "یاریگای وەرزشی خورماڵ ",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],[
+          ": دەربەندیخان",
+          "یاریگای گشتی دەربەندیخان",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],[
+          ": پێنجوێن",
+          "پێنجوێنی خوارەوە هۆڵی بۆنەکان",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],[
+          ": پشدەر",
+          "یاریگای شەهید مامۆستا مهدی",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
       ];
@@ -212,8 +266,8 @@
 
       let cartshow = document.getElementById("show11");
       let cartshow1 = document.getElementById("map-container-google-1");
-      // cartshow.style.display = "none";
-      // cartshow1.style.display = "none";
+      cartshow.style.display = "none";
+      cartshow1.style.display = "none";
       function shows(number) {
         number = number - 0;
         cartshow.style.display = "block";
