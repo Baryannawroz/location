@@ -93,6 +93,14 @@
         <div onclick="{shows(5)}" class="dropdown-item text-center" href="#">
           ڕەواندز
         </div>
+        <div onclick="{shows(18)}" class="dropdown-item text-center" href="#">
+                   بالیسان
+        </div>
+         <div onclick="{shows(17)}" class="dropdown-item text-center" href="#">
+          شکارتە  
+        </div> <div onclick="{shows(39)}" class="dropdown-item text-center" href="#">
+          تەق تەق  
+        </div> 
       </div>
     </div>
     <div class="dropdown contten d-flex justify-content-center mt-4">
@@ -129,33 +137,46 @@
           <div onclick="{shows(13)}" class="dropdown-item text-center" href="#">
           پێنجوێن
         </div>   
-           <div onclick="{shows(14)}" class="dropdown-item text-center" href="#">
-          پشدەر
-        </div>
-         <div onclick="{shows(15)}" class="dropdown-item text-center" href="#">
+           
+         <div onclick="{shows(14)}" class="dropdown-item text-center" href="#">
           رانیە 
         </div>
-         <div onclick="{shows(16)}" class="dropdown-item text-center" href="#">
+         <div onclick="{shows(15)}" class="dropdown-item text-center" href="#">
           چوارقورنە 
         </div>
-         <div onclick="{shows(17)}" class="dropdown-item text-center" href="#">
+         <div onclick="{shows(16)}" class="dropdown-item text-center" href="#">
           حاجیاوا  
         </div>
-         <div onclick="{shows(18)}" class="dropdown-item text-center" href="#">
-          شکارتە  و سەروچاوە  
-        </div>   <div onclick="{shows(19)}" class="dropdown-item text-center" href="#">
-                    دۆڵی بالیسان
-        </div>   <div onclick="{shows(20)}" class="dropdown-item text-center" href="#">
+             <div onclick="{shows(19)}" class="dropdown-item text-center" href="#">
           چەمچەماڵ 
-        </div>   <div onclick="{shows(21)}" class="dropdown-item text-center" href="#">
+        </div>   <div onclick="{shows(20)}" class="dropdown-item text-center" href="#">
         تەکیە 
         </div>
-         <div onclick="{shows(26)}" class="dropdown-item text-center" href="#">
+         <div onclick="{shows(25)}" class="dropdown-item text-center" href="#">
         پیرەمەگرون 
-        </div> <div onclick="{shows(27)}" class="dropdown-item text-center" href="#">
+        </div> <div onclick="{shows(26)}" class="dropdown-item text-center" href="#">
         دوکان 
-        </div> <div onclick="{shows(28)}" class="dropdown-item text-center" href="#">
+        </div> <div onclick="{shows(27)}" class="dropdown-item text-center" href="#">
         خەلەکان 
+        </div><div onclick="{shows(36)}" class="dropdown-item text-center" href="#">
+        سەنگەسەر 
+        </div><div onclick="{shows(35)}" class="dropdown-item text-center" href="#">
+        قەڵادزی 
+        </div>
+        <div onclick="{shows(34)}" class="dropdown-item text-center" href="#">
+        بازیان 
+        </div>
+         <div onclick="{shows(33)}" class="dropdown-item text-center" href="#">
+                   عەربەت
+        </div>
+        <div onclick="{shows(31)}" class="dropdown-item text-center" href="#">
+                   ڕزگاری
+        </div>  <div onclick="{shows(30)}" class="dropdown-item text-center" href="#">
+                   کفری
+        </div> <div onclick="{shows(29)}" class="dropdown-item text-center" href="#">
+                   زەڕایەن
+        </div> <div onclick="{shows(28)}" class="dropdown-item text-center" href="#">
+                   سیروان
         </div>
       </div>
       </div>
@@ -176,21 +197,45 @@
         class="dropdown-menu w-75 justify-content-center"
         aria-labelledby="dropdownMenuButton"
       >
-         <div onclick="{shows(22)}" class="dropdown-item text-center" href="#">
+         <div onclick="{shows(21)}" class="dropdown-item text-center" href="#">
           دهوک
         </div>
-         <div onclick="{shows(23)}" class="dropdown-item text-center" href="#">
+         <div onclick="{shows(22)}" class="dropdown-item text-center" href="#">
       زاخو
-        </div> <div onclick="{shows(24)}" class="dropdown-item text-center" href="#">
+        </div> <div onclick="{shows(23)}" class="dropdown-item text-center" href="#">
           شێلادزێ
-        </div> <div onclick="{shows(25)}" class="dropdown-item text-center" href="#">
+        </div> <div onclick="{shows(24)}" class="dropdown-item text-center" href="#">
           ئاکرێ
         </div> 
       </div>
     </div>
+<div class="dropdown contten d-flex justify-content-center mt-4">
+      <button
+        class="btn btn-secondary dropdown-toggle w-75 center"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        کەرکوک
+      </button>
+      <div
+        class="dropdown-menu w-75 justify-content-center"
+        aria-labelledby="dropdownMenuButton"
+      >
+        
+         <div onclick="{shows(37)}" class="dropdown-item text-center" href="#">
+      کەرکوک
+        </div> <div onclick="{shows(38)}" class="dropdown-item text-center" href="#">
+          خورماتوو
+        </div>
+      </div>
+    </div>
 
+        <br><br>
     <div
-      class="card d-flex justify-content-center locations"
+      class="card d-flex justify-content-center locations mt-4"
       style="width: 19rem; margin: 10% auto"
     >
       <!--Google map-->
@@ -216,6 +261,7 @@
         <br />
         <p id="p1" class="card-text text-end" style="text-align: end"></p>
         <p id="p2" class="card-text text-end" style="text-align: end"></p>
+        <p id="phone" class="card-text text-end" style="text-align: end"></p>
       </div>
     </div>
 
@@ -238,133 +284,249 @@
       let locationn = [
         [
           ": هەولێر",
-          "یاریگای یانەی ئاسۆ،جووت سایدی بنەسڵاوە،تەنیشت مزگەوتی ئیسراو میعراج",
+          "هەولێر : یاریگای یانەی ئاسۆ، جووت سایدی بنەسڵاوە، تەنیشت مزگەوتی ئیسراو میعراج", 
+          "هەولێر 07503879566 - 07517633626",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6439.405260171506!2d44.02711979655856!3d36.19811329638554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670269953052!5m2!1sen!2siq",
         ],
         [
           ": کۆیە",
           "هۆڵی دۆستان خوار ئاشتی مام خدر",
+          "کۆیە 07507462306",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25795.85115266418!2d44.60835375712591!3d36.08175152090274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267330247!5m2!1sen!2siq",
         ],
         [
           ": سۆران",
-          " بۆ خوشکان :هۆڵی مەڵبەندی ١٢ی یەگرتووی سۆران",
-          "بۆ برایان :مزگەوتی فورقان تەنیشت بارەگای کۆمەڵی دادگەری بەرامبەر بەڕێوبەرایەتی ئەوقافی سۆران",
+          "سۆران - بۆ برایان : مزگەوتی فورقان تەنیشت بارەگای کۆمەڵی دادگەری بەرامبەر بەرێوەبەرایەتی ئەوقافی سۆران ",
+          "سۆران - بۆ خوشکان : هۆلی مەڵبەندی 12ی سۆرانی یەکگرتوو سەر رێگای رواندز",
+          "سۆران 07504192038 - 07803681521",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
         [
           ": شەقڵاوا",
-          "بارەگای رێخراوی نور لەسەر مەیدان",
+          "شەقڵاوە : بارەگای رێکخراوی نور لە سەر مەیدان",
+          "شەقڵاوە 07504498050",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
         [
           ": خەلیفان",
-          "بارەگای کۆمەڵی دادگەر نزیک پیشەسازی خەلیفان",
+          "خەلیفان : بارەگای کۆمەڵی دادگەری نزیک پیشەسازی خەلیفان ",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
+        //5
         [
           ": رواندز",
-          "بارەگای ناوچەی رواندزی یەگرتووی ئیسلامی کوردستان نزیک تەکسی پاشای گەورە",
+          "رواندز : بارەگای ناوچەی رواندزی یەکگرتووی ئیسلامی کوردستان نزیک تەکسی پاشای گەورە ",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],  [
           ": سلێمانی",
-          "یاریگای یانەی ئاشتی بەرامبەر کارەبای ڕزگاری",
+          "سلێمانی : یاریگای یانەی ئاشتی بەرامبەر کارەبای ڕزگاری",
+          "سلێمانی 07707600909 - 07511091299",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],  [
           ": هەڵەبجە",
-          "پارکی یاری هەڵەبجە",
+          "هەڵەبجە : پارکی یاری هەڵەبجە",
+          "هەڵەبجە 07501892939 - 07507687578",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],  [
           ": سەیدسادق",
-          "یاریگای گشتی حەسار",
+          "سەیدسادق : یاریگای گشتی حەسار",
+          "سەیدسادق 07508612584",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],  [
           ": عەربەت",
-          "یاریگای لاوان پشت کتێبخانەی گشتی",
+          "عەربەت : یاریگای لاوان پشت کتێبخانەی گشتی",
+          "عەربەت 07501461794",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
-        ],  [
+        ], 
+        //10
+         [
           ": شارەزوور",
-          "یاریگای(خالی کاکەم)،تەنیشت بەڕێوەبەرێتی پەروەردەی شارەزوور",
+          "شارەزوور : یاریگای (خالی کاکەم)، تەنیشت بەڕێوەبەرێتی پەروەردەی شارەزوور",
+          "شارەزوور 07501530450",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ], [
-          ": خورماڵ",
-          "یاریگای وەرزشی خورماڵ ",
+          ": هەورامان",
+          "خوڕماڵ : یاریگای وەرزشی خوڕماڵ",
+          "هەورامان 07501755726",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": دەربەندیخان",
-          "یاریگای گشتی دەربەندیخان",
+          "دەربەندیخان : یاریگای گشتی دەربەندیخان",
+          "دەربەندیخان 07719672239",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": پێنجوێن",
-          "پێنجوێنی خوارەوە هۆڵی بۆنەکان",
-          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
-        ],[
-          ": پشدەر",
-          "یاریگای شەهید مامۆستا مهدی",
+          "پێنجوێن : پێنجوێنی خوارەوە هۆڵی بۆنەکان",
+          "پێنجوێن 07721055650",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": رانیە ",
-          "یاریگای کێوەرەش نزیک ترافیکی سەیداوا",
+          "  رانیە - یاریگای کێوەرەش نزیک ترافیکی سەیداوا",
+          "ڕانیە 07502219484",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
-        ],[
+        ],
+        //15
+        [
           ": چوارقورنە ",
-          "دەروازەی چوارقورنە یاریگای کام پشت بەنزینخانەی ئەستێرە",
+          "چوارقورنە - دەروازەی چوارقورنە یاریگای کام پشت بەنزینخانەی ئەستێرە",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": حاجیاوا ",
-          "یاریگای نزیک ئامادەیی حاجیاوا",
+          "حاجیاوا یاریگای نزیک ئامادەیی حاجیاوا",
+          "حاجی ئاوا 07511257146",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
-          ": شکارتە  و سەروچاوە",
-          "یاریگای بچووککراوە نزیک مزگەوتی گەورەی شکارتە",
+          ": شکارتە",
+          "شکارتە  و سەروچاوە - یاریگای بچووککراوە نزیک مزگەوتی گەورەی شکارتە .",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
-          ": دۆڵی بالیسان",
-          " مزگەوتی ملا ڕەمەزان بەرامبەر ناحیە",
+          ":  بالیسان",
+          "دۆڵی بالیسان : مزگەوتی مەلا ڕەمەزان بەرامبەر ناحیە",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": چەمچەماڵ ",
-          "یاریگای یانەی وەرزشی چەمچەماڵ",
+          "چەمچەماڵ : یارگای یانەی وەرزشی چەمچەمچاڵ شيواز عبد الله ",
+          "چەمچەماڵ 07507847543",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
-        ],[
+        ],
+        //20
+        [
           ": تەکیە ",
-          "یارگای وەرزشی تەکیە",
+          " تەکیە: ساحەی تاتانی نزیک مزگەوتی م.ملاشێخ صاڵح لەگەڕەکی ڕزگاری",
+          "تەکیە 07508244977",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": دهوک",
-          "هولا جوان",
+          "هۆڵی جوان لە ناوچەی ماڵتا نزیک نەخۆشخانەی ئارڤین دەکرێت",
+          "دهۆک ئامادەیی 07514554401 - 07502205158 - 07514902667",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": زاخو ",
-          "یاریگەها ئارێنا لپشت دادگەها نوی تەنشت پانزینخانا وار و قوتابخانا نولج یا ئنگلیزی",
+          "دێ ساحا ئارینا بیت ل پشت مەحکەما نوی تەنشت پانزینخانا وار و قوتابخانا نولج یا ئنگلیزی",
+          "زاخۆ 07517876981",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": شێلادزێ ",
           "شیڤ جنارکێ تەنشت پانزینخانا شێلادزێ",
+          "شیلادزێ 07504785077",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],[
           ": ئاکرێ ",
-          "یاریگەها شەهیدانا نوی نێزیک نێرگزمۆل",
+          "ئاکرێ : یاریگەها شەهیدانا نوی نێزیک نێرگزمۆل",
+          "ئاکرێ 07501973912",
           "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
-        ],[
+        ],
+        //25
+        [
           ": پیرەمەگرون ",
           "یاریگای کتێبخانە",
+          "پیرەمەگرون 07719675796",
           "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
         ],[
           ": دوکان ",
-          "یاریگای بانۆکە بەرامبەر هۆڵی بۆنەکان",
+          "دوکان/ یاریگای تارتانی بانوەکە/ به‌رامبه‌ر هۆڵی بۆنەکان",
+          "",
           "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
         ],[
           ": خەلەکان ",
-          "یاریگای خەلەکان ",
+          "گۆڕەپانی تاتانی خەلەکان",
+          "",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": سیروان ",
+          "",
+          "سیروان 07501348656 - 07510036054",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": زەڕایەن",
+          "",
+          "زەڕایەن 07501590394",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],
+        //30
+        [
+          ": کفری",
+          "هۆڵی موجازف/ به‌رامبه‌ر  مه‌له‌وانگه‌ی میر",
+          "کفرێ 07723077737",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": ڕزگاری",
+          "یاریگای ڕزگاری - بەرامبەر ئاگرکوژانەوە",
+          "",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": گەرمیان",
+          " کەلار : پارکی شاری یاری کــــــەلار بەرامبەر نەخۆشخانەی گشتی",
+          "گەرمیان 07702152627",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": عەربەت",
+          "عەربەت : یاریگای لاوان پشت کتێبخانەی گشتی",
+          "عەربەت 07501461794",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": بازیان",
+          "ناوەندی قەزای بازیان -  یاریگای داخراوی وەرزشی بازیان - گەڕەکی ئاشتی",
+          "بازیان 07718497969",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],
+        //35
+        [
+          ": قەڵادزێ",
+          "قەڵادزی : یاریگای شەهید مامۆستا مهدی",
+          "پشدەر 07506114089",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": سەنگەسەر",
+          "سەنگەسەر : یاریگای گشتی سەنگەسەر بەردەم ئامادەی سەنگەسەر",
+          "",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": کەرکوک",
+          "شۆرجە _ رەشید ئاوا / یاریگای یانەی وەرزشی شۆرجە / تەنیشت هۆڵی پرسەی شۆرجە",
+          "کەرکوک 07709311321 - 07503807308",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": خورماتوو",
+          "یاریگای هاوکاری بەرامبەر پارکی برایەتی",
+          "خورماتوو 07714902017",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": تەق تەق",
+          "یاریگای شەهید ئاکۆ سور - نزیک کتێبخانەی گشتی",
+          "تەق تەق 07702441771",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],
+        //40
+        [
+          ": شێخان",
+          "",
+          "شێخان 07504294908",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": بەردەڕەش",
+          "",
+          "بەردەرەش 07507283450",
+          "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
+        ],[
+          ": ئامێدی",
+          "",
+          "ئامێدی 07507833640",
           "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.3436611563901!2d43.8755993!3d36.7375775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40066d369fee7ddb%3A0x1dfe2861b192e5df!2z2YXZhNi52Kgg2LTbldmH24zYr9in2YbYpyDZhtuM!5e0!3m2!1sen!2siq!4v1670332780404!5m2!1sen!2siq" ,
         ]
+
     //٢٧
       ];
       let tit = document.getElementById("t1");
       let par1 = document.getElementById("p1");
       let par2 = document.getElementById("p2");
       let srca = document.getElementById("ss");
+      let phone = document.getElementById("phone");
 
       let cartshow = document.getElementById("show11");
       let cartshow1 = document.getElementById("map-container-google-1");
@@ -379,9 +541,13 @@
   par1.innerHTML = locationn[number][1];
   par2.innerHTML = locationn[number][2];
   
+  srca.src = locationn[number][4];
+  phone.innerHTML=locationn[number][3]
+}else{
+  par2.innerHTML="";
+phone.innerHTML=locationn[number][2]
   srca.src = locationn[number][3];
-}else
-srca.src = locationn[number][2];
+}
         console.log(srca.src);
         cartshow1.style.display = "block";
       }
