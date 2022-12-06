@@ -201,6 +201,7 @@
         <h5 id="t1" class="text-end" style="text-align: end">Card title</h5>
         <br />
         <p id="p1" class="card-text text-end" style="text-align: end"></p>
+        <p id="p2" class="card-text text-end" style="text-align: end"></p>
       </div>
     </div>
 
@@ -336,6 +337,7 @@
       ];
       let tit = document.getElementById("t1");
       let par1 = document.getElementById("p1");
+      let par2 = document.getElementById("p2");
       let srca = document.getElementById("ss");
 
       let cartshow = document.getElementById("show11");
@@ -347,8 +349,13 @@
         cartshow.style.display = "block";
         tit.innerHTML = locationn[number][0];
         par1.innerHTML = locationn[number][1];
-
-        srca.src = locationn[number][2];
+        if (number=2) {
+  par1.innerHTML = locationn[number][1];
+  par2.innerHTML = locationn[number][2];
+  
+  srca.src = locationn[number][3];
+}else
+srca.src = locationn[number][2];
         console.log(srca.src);
         cartshow1.style.display = "block";
       }
