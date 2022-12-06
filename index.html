@@ -22,23 +22,36 @@
         font-family: "rudaw", Courier, monospace;
         margin-top: 25px;
       }
+      #title {
+        font-size: 18px;
+        font-family: "rudaw", Courier, monospace;
+        margin-top: 25px;
+        text-align: center;
+      }
       .imge {
-        margin-top: 5px;
         margin: 5px 2px;
+      }
+      #pp {
+        margin-top: 13px;
       }
     </style>
   </head>
   <body>
     <div class="d-flex justify-content-between">
-      <div class="imge"><img src="gash.png" alt="" height="50px" /></div>
+      <div class="imge"><img src="p50.jpg" alt="" height="70px" /></div>
       <div>
         <p dir="rtl" id="main_title">ڕێكخراوی گەشيپێدانی قوتابیانی کوردستان</p>
       </div>
-      <div class="imge">
+      <div class="imge" id="pp">
         <img src="gash.png" alt="" height="50px" />
       </div>
     </div>
-    <p class="text-center">لێرەوە دەتوانیت بزانیت کە شوێنی<br> تاقیکردنەوەکەت لەکوێ دەبێت</p>
+    <p id="title">تاقیکردنەوەی ٥٠ گەوهەری بوخاری ـ پرۆژەی نوری جیھان</p>
+    <p class="text-center">
+      لێرەوە دەتوانیت بزانیت کە شوێنی<br />
+      تاقیکردنەوەکەت لەکوێ دەبێت
+    </p>
+
     <div class="dropdown contten d-flex justify-content-center mt-4 main">
       <button
         class="btn btn-secondary dropdown-toggle w-75 center"
@@ -61,7 +74,16 @@
           کۆیە
         </div>
         <div onclick="{shows(2)}" class="dropdown-item text-center" href="#">
+          سۆران
+        </div>
+        <div onclick="{shows(3)}" class="dropdown-item text-center" href="#">
           شەقڵاوە
+        </div>
+        <div onclick="{shows(4)}" class="dropdown-item text-center" href="#">
+          خەلیفان
+        </div>
+        <div onclick="{shows(5)}" class="dropdown-item text-center" href="#">
+          ڕەواندز
         </div>
       </div>
     </div>
@@ -129,13 +151,12 @@
       <div><br /><br /></div>
       <div class="locations"></div>
       <div class="card-body" id="show11">
-        <h5 id="t1" class="card-title">Card title</h5>
-        <p id="p1" class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+        <h5 id="t1" class="text-end" style="text-align: end">Card title</h5>
+        <br />
+        <p id="p1" class="card-text text-end" style="text-align: end"></p>
       </div>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -154,15 +175,34 @@
     <script>
       let locationn = [
         [
-          "هەولێر:سکرتاریەت",
+          "هەولێر",
+          "یاریگای یانەی ئاسۆ،جووت سایدی بنەسڵاوە،تەنیشت مزگەوتی ئیسراو میعراج",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6439.405260171506!2d44.02711979655856!3d36.19811329638554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670269953052!5m2!1sen!2siq",
         ],
         [
-          "کۆیە:هۆڵی دۆستان",
+          "کۆیە",
+          "هۆڵی دۆستان خوار ئاشتی مام خدر",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25795.85115266418!2d44.60835375712591!3d36.08175152090274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267330247!5m2!1sen!2siq",
         ],
         [
+          "سۆران",
+          " بۆ خوشکان :هۆڵی مەڵبەندی ١٢ی یەگرتووی سۆران",
+          "بۆ برایان :مزگەوتی فورقان تەنیشت بارەگای کۆمەڵی دادگەری بەرامبەر بەڕێوبەرایەتی ئەوقافی سۆران",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],
+        [
           "شەقڵاوا",
+          "بارەگای رێخراوی نور لەسەر مەیدان",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],
+        [
+          "خەلیفان",
+          "بارەگای کۆمەڵی دادگەر نزیک پیشەسازی خەلیفان",
+          "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
+        ],
+        [
+          "رواندز",
+          "بارەگای ناوچەی رواندزی یەگرتووی ئیسلامی کوردستان نزیک تەکسی پاشای گەورە",
           "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25690.125258431584!2d44.30236807431475!3d36.40276740723051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1670267462270!5m2!1sen!2siq",
         ],
       ];
@@ -172,16 +212,21 @@
 
       let cartshow = document.getElementById("show11");
       let cartshow1 = document.getElementById("map-container-google-1");
-      cartshow.style.display = "none";
-      cartshow1.style.display = "none";
+      // cartshow.style.display = "none";
+      // cartshow1.style.display = "none";
       function shows(number) {
         number = number - 0;
         cartshow.style.display = "block";
-        par1.innerHTML = locationn[number][0];
-        srca.src = locationn[number][1];
+        tit.innerHTML = locationn[number][0];
+        par1.innerHTML = locationn[number][1];
+
+        srca.src = locationn[number][2];
         console.log(srca.src);
         cartshow1.style.display = "block";
       }
     </script>
+    <div class="d-flex justify-content-center" style="height: 200px">
+      <img src="barg.jpg" alt="" />
+    </div>
   </body>
 </html>
